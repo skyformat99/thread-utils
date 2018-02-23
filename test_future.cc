@@ -4,6 +4,10 @@
 #include <future>
 #include <chrono>
 
+/*
+ * https://stackoverflow.com/questions/21500381/storing-stdpromise-objects-in-a-stdpair
+ */
+
 using namespace std::chrono_literals;
 
 typedef void rv_t;
@@ -35,5 +39,4 @@ int main()
     t.join();
 
     return 0;
-
 }
